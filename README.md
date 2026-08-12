@@ -8,19 +8,28 @@ Landing page personal y de contacto profesional de **Claudio Cárdenas Díaz** �
 
 Una página de una sola vista (*one-pager*) que sirve como carta de presentación en línea: quién soy, qué hago y cómo contactarme, con el CV y la carta de presentación descargables en PDF.
 
-## Contenido
+## Estructura
 
-| Archivo | Descripción |
-|---|---|
-| `index.html` | La página completa: HTML, CSS y JS en un solo archivo, sin dependencias de build |
-| `foto_hero.webp` | Foto del hero en escala de grises (se tiñe con el fondo vía `mix-blend-mode`) |
-| `foto.jpg` | Foto cuadrada optimizada, usada para vista previa en redes (Open Graph) |
-| `CV_Claudio_Cardenas.pdf` | Curriculum Vitae descargable |
-| `Carta_Presentacion_Claudio_Cardenas.pdf` | Carta de presentación genérica descargable |
+```
+.
+├── index.html              # Página principal (solo marcado)
+├── README.md
+└── assets/
+    ├── css/
+    │   └── styles.css      # Estilos: tema claro/oscuro, animaciones, responsive
+    ├── js/
+    │   └── main.js         # Interacciones: scroll, parallax, animaciones de entrada
+    ├── img/
+    │   ├── foto_hero.webp  # Foto del hero en escala de grises (se tiñe con el fondo vía mix-blend-mode)
+    │   └── foto.jpg        # Foto cuadrada optimizada, usada para vista previa en redes (Open Graph)
+    └── docs/
+        ├── CV_Claudio_Cardenas.pdf                  # Curriculum Vitae descargable
+        └── Carta_Presentacion_Claudio_Cardenas.pdf  # Carta de presentación descargable
+```
 
 ## Características
 
-- **Sitio 100% estático** — sin frameworks, sin build, sin backend. Un solo HTML autocontenido.
+- **Sitio 100% estático** — sin frameworks, sin build, sin backend. HTML, CSS y JS planos.
 - **Tema claro/oscuro automático** según la preferencia del sistema (`prefers-color-scheme`).
 - **Tipografía** [Rethink Sans](https://fonts.google.com/specimen/Rethink+Sans) (Google Fonts), con acentos en monoespaciada.
 - **Foto en duotono** integrada al fondo del hero con `mix-blend-mode: luminosity`, para que funcione en ambos temas con una sola imagen.
