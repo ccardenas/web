@@ -30,9 +30,9 @@ Una página de una sola vista (*one-pager*) que sirve como carta de presentació
 ## Características
 
 - **Sitio 100% estático** — sin frameworks, sin build, sin backend. HTML, CSS y JS planos.
-- **Tema claro/oscuro automático** según la preferencia del sistema (`prefers-color-scheme`).
+- **Tema oscuro** fijo, independiente de la preferencia del sistema.
 - **Tipografía** [Rethink Sans](https://fonts.google.com/specimen/Rethink+Sans) (Google Fonts), con acentos en monoespaciada.
-- **Foto en duotono** integrada al fondo del hero con `mix-blend-mode: luminosity`, para que funcione en ambos temas con una sola imagen.
+- **Foto en duotono** integrada al fondo del hero con `mix-blend-mode: luminosity`, para que se tiña con el color del fondo con una sola imagen.
 - **Animaciones sutiles**: entrada con *drift*, parallax en el hero, encabezado que se contrae al hacer scroll y subrayados deslizantes en los enlaces. Respetan `prefers-reduced-motion`.
 - **Responsive** — diseñado para verse bien de móvil a escritorio.
 - **Liviano**: ~240 KB en total, incluyendo los dos PDF.

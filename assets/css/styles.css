@@ -1,12 +1,13 @@
 /* ============ BASE / TEMA ============ */
 :root {
-  --cb-bg: 224, 240, 242;
-  --cb-fill: 0, 0, 0;
-  --cb-highlight: 12, 62, 69;
+  color-scheme: dark;
+  --cb-bg: 10, 22, 25;
+  --cb-fill: 255, 255, 255;
+  --cb-highlight: 124, 169, 184;
   --color-bg: rgba(var(--cb-bg), 1);
-  --color-fill: rgba(var(--cb-fill), .84);
-  --color-fill-light: #7ca9b8;
-  --color-bevel: rgba(var(--cb-fill), .69);
+  --color-fill: rgba(var(--cb-fill), .87);
+  --color-fill-light: #4a7482;
+  --color-bevel: rgba(var(--cb-fill), .5);
 
   --font-standard: "Rethink Sans", "SF Pro", system-ui, Helvetica, sans-serif, "Apple Color Emoji";
   --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
@@ -30,18 +31,6 @@
   --enterDrift: 1.2em;
   --enterTiming: .48s;
   --enterBounce: cubic-bezier(.42, 0, .21, 1);
-}
-
-/* Modo oscuro automático: misma paleta, invertida */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --cb-bg: 10, 22, 25;
-    --cb-fill: 255, 255, 255;
-    --cb-highlight: 124, 169, 184;
-    --color-fill: rgba(var(--cb-fill), .87);
-    --color-fill-light: #4a7482;
-    --color-bevel: rgba(var(--cb-fill), .5);
-  }
 }
 
 * , *:before, *:after { box-sizing: border-box; margin: 0; padding: 0; }
