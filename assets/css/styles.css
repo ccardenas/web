@@ -1,13 +1,13 @@
 /* ============ BASE / TEMA ============ */
 :root {
-  color-scheme: dark;
-  --cb-bg: 10, 22, 25;
-  --cb-fill: 255, 255, 255;
-  --cb-highlight: 124, 169, 184;
+  color-scheme: light;
+  --cb-bg: 252, 252, 250;
+  --cb-fill: 12, 18, 20;
+  --cb-highlight: 74, 116, 130;
   --color-bg: rgba(var(--cb-bg), 1);
   --color-fill: rgba(var(--cb-fill), .87);
   --color-fill-light: #4a7482;
-  --color-bevel: rgba(var(--cb-fill), .5);
+  --color-bevel: rgba(var(--cb-fill), .35);
 
   --font-standard: "Rethink Sans", "SF Pro", system-ui, Helvetica, sans-serif, "Apple Color Emoji";
   --font-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
@@ -82,8 +82,8 @@ a:not(.noline):hover:before { transform: scaleX(0); transform-origin: center rig
   backdrop-filter: saturate(142%) blur(20px);
   background: color-mix(in srgb, var(--color-bg), transparent 39%);
   border-radius: .43em;
-  box-shadow: #00000008 0 3px, #00000008 0 0 0 1px, #00000036 0 3px 66px,
-              inset #ffffff1f 1px 2px, inset #ffffff57 0 2px 12px;
+  box-shadow: #0000000a 0 3px, #00000014 0 0 0 1px, #0000001f 0 3px 66px,
+              inset #ffffff8c 1px 2px, inset #ffffffb3 0 2px 12px;
   content: ""; inset: -.62em -.75em; position: absolute;
   transition: box-shadow .21s ease; z-index: -1;
 }
@@ -121,7 +121,7 @@ body:not(.scrolled) .me { pointer-events: none; }
 }
 .mast:after {
   background: var(--color-bevel); bottom: 0; content: ""; height: 1px;
-  left: var(--outerPad); right: 0; mix-blend-mode: overlay;
+  left: var(--outerPad); right: 0;
   position: absolute; z-index: 2;
 }
 .mast h1 {
@@ -160,9 +160,9 @@ footer .wrap {
   padding-block-start: 2em; position: relative;
 }
 footer .wrap:before {
-  background: var(--color-fill); content: ""; height: 1px;
+  background: var(--color-bevel); content: ""; height: 1px;
   left: var(--outerPad); right: var(--outerPad); top: 0;
-  mix-blend-mode: overlay; position: absolute;
+  position: absolute;
 }
 footer p { font-size: var(--size-s); flex: 0; white-space: nowrap; }
 footer ul { display: flex; flex: 1; gap: 1.5em; justify-content: flex-end; white-space: nowrap; }
