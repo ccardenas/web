@@ -16,26 +16,26 @@ Una página de una sola vista (*one-pager*) que sirve como carta de presentació
 ├── README.md
 └── assets/
     ├── css/
-    │   └── styles.css      # Estilos: tema claro/oscuro, animaciones, responsive
+    │   └── styles.css      # Estilos: tema claro, animaciones, responsive
     ├── js/
     │   └── main.js         # Interacciones: scroll, parallax, animaciones de entrada
     ├── img/
     │   ├── foto_hero.webp  # Foto del hero en escala de grises (se tiñe con el fondo vía mix-blend-mode)
     │   └── foto.jpg        # Foto cuadrada optimizada, usada para vista previa en redes (Open Graph)
     └── docs/
-        ├── CV_Claudio_Cardenas.pdf                  # Curriculum Vitae descargable
+        ├── CV_Claudio_Cardenas_2026.pdf             # Curriculum Vitae descargable
         └── Carta_Presentacion_Claudio_Cardenas.pdf  # Carta de presentación descargable
 ```
 
 ## Características
 
 - **Sitio 100% estático** — sin frameworks, sin build, sin backend. HTML, CSS y JS planos.
-- **Tema oscuro** fijo, independiente de la preferencia del sistema.
+- **Tema claro** fijo, independiente de la preferencia del sistema (`color-scheme: light`).
 - **Tipografía** [Rethink Sans](https://fonts.google.com/specimen/Rethink+Sans) (Google Fonts), con acentos en monoespaciada.
 - **Foto en duotono** integrada al fondo del hero con `mix-blend-mode: luminosity`, para que se tiña con el color del fondo con una sola imagen.
 - **Animaciones sutiles**: entrada con *drift*, parallax en el hero, encabezado que se contrae al hacer scroll y subrayados deslizantes en los enlaces. Respetan `prefers-reduced-motion`.
 - **Responsive** — diseñado para verse bien de móvil a escritorio.
-- **Liviano**: ~240 KB en total, incluyendo los dos PDF.
+- **Liviano**: ~210 KB en total, incluyendo los dos PDF.
 
 ## Desarrollo local
 
